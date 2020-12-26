@@ -1,9 +1,20 @@
+.dialogs {
+    display: grid;
+    grid-template-columns: 2fr 8fr;
+}
 
+.dialogsItem {
+    padding: 10px;
 
-.header{
-    grid-area: h;
-    background-color: rgb(142, 211, 142);
-  }
-  .header img{
-    width: 20px;
-  }
+}
+
+.dialogsItem .active{
+    color:gold;
+}
+.massage {
+    padding: 10px;
+}
+
+.massages {
+
+}
