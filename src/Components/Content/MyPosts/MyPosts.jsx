@@ -1,21 +1,17 @@
-
 import React from 'react';
 import c from './MyPosts.module.css';
 import Post from './Post/Post';
 
-
-
 const MyPosts = (props) => {
-    let postsElements = props.posts.map(p => <Post message={p.message} likesCount={p.likesCount}/>);
+    let postsElements = props.posts.map(p => <Post message={p.message}  key = {p.id} likesCount={p.likesCount}/>);
     let newPostElement=React.createRef();
-    let addPost=() =>{
-        props.dispatch({type:'ADD-POST'});
+    let AddPost=() =>{
+        props.addPost();
 
     }
     let onPostChange = () =>{
-        let text=newPostElement.current.value;
-        let action = {type: 'UPDATE-NEW-POST-TEXT', newText: text};
-        props.dispatch(action);
+        let text = newPostElement.current.value;
+        props.updateNewPostText(text);
     }
     return (
         <div className={c.postsBlock}>
@@ -24,7 +20,7 @@ const MyPosts = (props) => {
                 <textarea ref={newPostElement} value={props.newPostText} onChange={onPostChange}/>
             </div>
             <div>
-                <button onClick={addPost}>Add post</button>
+                <button onClick={AddPost}>Add post</button>
             </div>
             <div>
                 New posts

@@ -4,6 +4,12 @@
     grid-area: h;
     background-color: rgb(142, 211, 142);
   }
-  .header img{
+.header img{
     width: 20px;
   }
+
+.loginBlock{
+  float:right;
+  color:blueviolet;
+
+}

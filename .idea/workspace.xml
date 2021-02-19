@@ -2,12 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5d916805-79fb-404a-b932-a5fa5a66c2e4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Components/Content/MyPosts/MyPostsContainer.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Dialogs/DialogsContainer.jsx" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/Components/Friends/Friends.jsx" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/Components/Friends/Friends.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/State.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Users/Users.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Users/UsersContainer.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Users/users.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Redux/Content-reducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Redux/Dialogs-reducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Redux/Users-reducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Redux/redux-store.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Redux/store.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Content/Content.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Content/Content.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Content/MyPosts/MyPosts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Content/MyPosts/MyPosts.jsx" afterDir="false" />
@@ -26,11 +37,19 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="https://github.com/L1nkolnKr/First-project" />
+      </set>
+    </option>
   </component>
   <component name="ProjectId" id="1m6aaJRpluUomt1sPICiCoUAXNy" />
   <component name="ProjectViewState">
@@ -41,8 +60,9 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="js.last.introduce.type" value="LET" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="js.last.introduce.type" value="CONST" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Components/Users" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -54,11 +74,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\reactCourse\01-first-project\my-app\src\Components\Users" />
+      <recent name="E:\reactCourse\01-first-project\my-app\src\Redux" />
+      <recent name="E:\reactCourse\01-first-project\my-app\src\Components\Dialogs" />
+      <recent name="E:\reactCourse\01-first-project\my-app\src\Components\Content\MyPosts" />
       <recent name="E:\reactCourse\01-first-project\my-app\src" />
-      <recent name="E:\reactCourse\01-first-project\my-app\src\Components\Friends" />
-      <recent name="E:\reactCourse\01-first-project\my-app\src\Components\Dialogs\Massage" />
-      <recent name="E:\reactCourse\01-first-project\my-app\src\Components\Dialogs\DialogItem" />
-      <recent name="E:\reactCourse\01-first-project\my-app\src\Components\Content\ContentInfo" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -94,7 +114,31 @@
       <workItem from="1609795941530" duration="596000" />
       <workItem from="1609860799975" duration="247000" />
       <workItem from="1609862161669" duration="3259000" />
-      <workItem from="1609944083178" duration="5273000" />
+      <workItem from="1609944083178" duration="5558000" />
+      <workItem from="1609965660371" duration="3046000" />
+      <workItem from="1609972461703" duration="4938000" />
+      <workItem from="1610027789250" duration="634000" />
+      <workItem from="1610035623587" duration="1318000" />
+      <workItem from="1610053489156" duration="3026000" />
+      <workItem from="1610061431095" duration="595000" />
+      <workItem from="1610135319489" duration="595000" />
+      <workItem from="1610142404058" duration="2944000" />
+      <workItem from="1610220538202" duration="1775000" />
+      <workItem from="1610284199945" duration="2302000" />
+      <workItem from="1610289047196" duration="2062000" />
+      <workItem from="1610297209282" duration="505000" />
+      <workItem from="1610361341483" duration="4831000" />
+      <workItem from="1610369802907" duration="980000" />
+      <workItem from="1610385981522" duration="1012000" />
+      <workItem from="1610400366166" duration="2445000" />
+      <workItem from="1610408754387" duration="845000" />
+      <workItem from="1610482432070" duration="3567000" />
+      <workItem from="1610490786150" duration="2523000" />
+      <workItem from="1610496510582" duration="1816000" />
+      <workItem from="1610562682345" duration="4872000" />
+      <workItem from="1610723344644" duration="870000" />
+      <workItem from="1610891381435" duration="2307000" />
+      <workItem from="1611009145021" duration="1664000" />
     </task>
     <servers />
   </component>
