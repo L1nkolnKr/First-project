@@ -8,9 +8,11 @@ const Content = (props) => {
 
 
     return (
-        <div className>
+        <div className={c.content}>
             <ContentInfo/>
-            <MyPosts posts={props.posts}/>
+            <MyPosts posts={props.state.posts}
+                     newPostText={props.state.newPostText}
+                     dispatch={props.dispatch}/>
         </div>
     );
 }

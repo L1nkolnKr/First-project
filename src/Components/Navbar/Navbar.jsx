@@ -9,6 +9,7 @@ const Navbar = ()=>{
       <div className={c.item}><NavLink to="/news" activeClassName={c.activeLink}>News</NavLink></div>
       <div className={c.item}><NavLink to="/music" activeClassName={c.activeLink}>Music</NavLink></div>
       <div className={c.item}><NavLink to="/settings" activeClassName={c.activeLink}>Settings</NavLink></div>
+
   </nav>
 }
 
