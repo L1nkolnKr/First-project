@@ -17,9 +17,7 @@ class ProfileContainer extends React.Component{
         userId = 15086;
       }
         this.props.getUserProfile(userId);
-        
         this.props.getStatus(userId);
-
     }
 
     render(){
