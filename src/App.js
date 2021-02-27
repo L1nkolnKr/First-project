@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './App.css';
 import Navbar from './Components/Navbar/Navbar';
 import {Route} from "react-router-dom"
@@ -10,12 +10,23 @@ import UsersContainer from "./Components/Users/UsersContainer";
 import ProfileContainer from './Components/Content/ProfileContainer';
 import HeaderContainer from './Components/Header/HeaderContainer';
 import Login from './login/Login';
+import { connect } from 'react-redux';
+import {initializeApp} from './Redux/app-reducer'
+import Preloader from './Components/common/preloader/Preloader';
 
 
 
-const App = (props) => {
+class App extends Component {
+    componentDidMount(){
+        this.props.initializeApp();
+    }
+    render (){
+        
+        if(!this.props.initialized){
+        return <Preloader/>
+        }
+
     return (
-
             <div className='app-wrapper'>
                 <HeaderContainer/>
                 <Navbar/>
@@ -32,5 +43,10 @@ const App = (props) => {
 
     );
 }
+}
 
-export default App;
+const mapStateToProps = (state) =>{
+    initialized: state.app.initialized
+}
+
+export default connect(mapStateToProps,{initializeApp}) (App);
