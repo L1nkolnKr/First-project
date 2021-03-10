@@ -29,7 +29,6 @@ const MyPosts = React.memo(props => {
 
     let AddPost=(value) =>{
         props.addPost(value.newPostText);
-
     }
     
     return (
