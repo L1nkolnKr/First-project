@@ -9,10 +9,12 @@ import { getPageSize, getUsers, getTotalUsersCount, getCurrentPage, getIsFetchin
 
 class UsersContainer extends React.Component{
     componentDidMount(){
-        this.props.requestUsers(this.props.page, this.props.pageSize);
+        const{currentPage, pageSize} = this.props;
+        this.props.requestUsers(currentPage, pageSize);
     }
     onPageChanged = (pageNumber) =>{
-        this.props.requestUsers(pageNumber, this.props.pageSize);
+        const { pageSize} = this.props; 
+        this.props.requestUsers(pageNumber, pageSize);
     }
     
         render(){
@@ -21,29 +23,17 @@ class UsersContainer extends React.Component{
             <Users 
             totalUsersCount = {this.props.totalUsersCount}
             pageSize = {this.props.pageSize}
-            page = {this.props.page}
+            currentPage={this.props.currentPage}
             onPageChanged = {this.props.onPageChanged}
             users = {this.props.users}
             follow = {this.props.follow}
             unfollow = {this.props.unfollow}
             followingInProgress = {this.props.followingInProgress}
-
             /> 
             </>
         }
 }
 
-
-/*let mapStateToProps = (state) => {
-    return {
-        users: state.usersPage.users,
-        pageSize: state.usersPage.pageSize,
-        totalUsersCount: state.usersPage.totalUsersCount,
-        page: state.usersPage.page,
-        isFetching: state.usersPage.isFetching,
-        followingInProgress:state.usersPage.followingInProgress,
-    }
-}*/
 
 let mapStateToProps = (state) => {
     return {
@@ -57,5 +47,5 @@ let mapStateToProps = (state) => {
 }
 
 export default compose( connect (mapStateToProps, 
-    { follow, unfollow, setCurrentPage, toggleFollowingProgress, requestUsers}))(UsersContainer)
+    { follow, unfollow, setCurrentPage, toggleFollowingProgress, getUsers: requestUsers}))(UsersContainer)
 

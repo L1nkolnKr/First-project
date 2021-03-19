@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import './App.css';
 import Navbar from './Components/Navbar/Navbar';
 import {Route, withRouter} from "react-router-dom"
@@ -17,14 +17,13 @@ import { compose } from 'redux';
 
 
 
-class App extends React.Component {
+class App extends Component {
     componentDidMount(){
         this.props.initializeApp();
     }
     render (){
-        
-        if(!this.props.initialized){
-        return <Preloader/>
+        if (!this.props.initialized) {
+            return <Preloader />
         }
 
     return (
@@ -41,7 +40,7 @@ class App extends React.Component {
                     <Route path='/settings' component={Settings}/>
                 </div>
             </div>
-)}};
+)};}
 
 const mapStateToProps = (state) =>({
     initialized: state.app.initialized
